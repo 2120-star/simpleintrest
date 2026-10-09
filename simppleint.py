@@ -1,12 +1,15 @@
-
 def simple_interest(p, r, t):
-    si = (p * r * t) / 100
-    return si
+    return (p * r * t) / 100
 
-p = float(input("Enter the principal amount: "))
-r = float(input("Enter the rate of interest: "))
-t = float(input("Enter the time in years: "))
 
-result = simple_interest(p, r, t)
+def main():
+    p = float(input("Enter the principal amount: "))
+    r = float(input("Enter the rate of interest: "))
+    t = float(input("Enter the time in years: "))
 
-print("Simple Interest =", result)
+    result = simple_interest(p, r, t)
+    print("Simple Interest =", result)
+
+
+if __name__ == "__main__":
+    main()
